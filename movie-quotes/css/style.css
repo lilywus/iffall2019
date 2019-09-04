@@ -1,0 +1,42 @@
+body {
+	background-color: #fffbed;
+}
+
+h1 {
+	font-family: "Courier New", Courier, monospace;
+}
+
+p {
+	font-family: sans-serif;
+	line-height: 1.6em;
+}
+
+.venkman {
+	font-weight: bold;
+	color: #4287f5;
+}
+
+.barrett {
+	font-weight: bold;
+	color: #f55a42;
+}
+
+.mayor {
+	font-weight: bold;
+	color: #eb9e34;
+}
+
+.stantz {
+	font-weight: bold;
+	color: #71bf41;
+}
+
+.spengler {
+	font-weight: bold;
+	color: #41bfa6;
+}
+
+.zeddemore {
+	font-weight: bold;
+	color: #ae34eb;
+}
