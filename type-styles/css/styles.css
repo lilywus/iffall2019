@@ -1,5 +1,5 @@
 body {
-	font-family: "Arial", "Helvectica", Sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
 }
 
@@ -21,4 +21,5 @@ h2 {
 
 li {
 	margin-top: 30px;
+	list-style-type: none;
 }
