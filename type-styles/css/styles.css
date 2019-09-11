@@ -1,0 +1,24 @@
+body {
+	font-family: "Arial", "Helvectica", Sans-serif;
+	font-size: 18px;
+}
+
+code {
+	padding: 5px;
+	font-family: "Courier New", Courier, monospace;
+	background: #eee;
+}
+
+code:hover {
+	color: #fff;
+	background: #000;
+}
+
+h2 {
+	padding-top:20px;
+	border-top: 2px dashed #32a852;
+}
+
+li {
+	margin-top:30px;
+}
