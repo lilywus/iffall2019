@@ -35,6 +35,16 @@ section {
 	padding: 3px 152px;
 }
 
+/*
+Thing to use: ;
+
+section > div {
+	width: 960px;
+	margin: auto;
+	padding: 40px 0;
+}
+*/
+
 section h1 {
 	margin-bottom: 31px;
 }
