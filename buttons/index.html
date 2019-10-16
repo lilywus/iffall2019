@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Buttons &mdash; James Fawcett</title>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
+
+		<script src="https://kit.fontawesome.com/9736656b24.js" crossorigin="anonymous"></script>
+		
+		<style>
+			body {
+				color: #333;
+				font-family: 'Open Sans', sans-serif;
+				margin: 0;
+				padding: 0;
+			}
+
+			#main_content {
+				margin: 40px;
+			}
+
+			h1 {
+			 	font-size: 30px;
+			 	margin-bottom: 40px;
+			}
+
+			.button_container {
+				border: 1px solid #ddd;
+				margin: 0 10px 10px 0;
+				padding: 20px;
+				width: 300px;
+				height: 300px;
+				float: left;
+				overflow: hidden;
+				box-sizing: border-box;
+				text-align: center;
+			}
+
+			a#coke {
+				display: inline-block;
+				margin-top: 40px;
+				height: 180px;
+				width: 180px;
+				background-color: red;
+				text-align: center;
+				border-radius: 50%;
+				transition: all .3s ease-in-out;
+			}
+
+			a#coke img {
+				width: 150px;
+				margin-top: 65px;
+			}
+
+			a#coke:hover {
+				background: rgb(255,0,0);
+				background: linear-gradient(180deg, rgba(255,0,0,1) 47%, rgba(255,255,255,1) 100%);
+				transition: all .3s ease-in-out;
+			}
+
+			a#cn {
+				display: inline-block;
+				margin-top: 90px;
+				background-color: #fff;
+				width: 150px;
+				height: 80px;
+				overflow: hidden;
+				transition: all .3s ease-in-out;
+			}
+
+			a#cn img {
+				width: 150px;
+				height: 80px;
+			}
+
+			a#cn:hover {
+				height: 65px;
+				border-radius: 50%;
+				transition: all .3s ease-in-out;
+			}
+
+			@font-face{
+			  font-family: 'Bebas Neue';
+			  src: url('fonts/BebasNeue.otf') format('opentype');
+			}
+
+			a#kittens {
+				display: inline-block;
+				margin-top: 70px;
+				width: 120px;
+				height: 120px;
+				text-align: center;
+				font-family: 'Bebas Neue', Helvetica, sans-serif;
+				font-size: 36px;
+				font-weight: normal;
+				text-decoration: none;
+				color: #b40a1d;
+				transition: all .3s ease-in-out;
+			}
+
+			.bomb {
+				z-index: -22;
+				position: absolute;
+				margin-left: -15px;
+				transition: all .3s ease-in-out;
+			}
+
+			a#kittens:hover {
+				color: rgb(247, 190, 59);
+				transition: all .3s ease-in-out;
+			}
+
+			a#kittens:hover .bomb {
+				font-size: 170px;
+				margin-left: -65px;
+				margin-top: -40px;
+				color: #b40a1d;
+				transition: all .3s ease-in-out;
+			}
+
+			a#nike {
+				display: inline-block;
+				margin-top: 85px;
+				width: 170px;
+				height: 78px;
+				background-color: #fff;
+				transition: all .3s ease-in-out;
+			}
+
+			a#nike img {
+				width: 150px;
+			}
+
+			a#nike:hover {
+				filter: invert(100%);
+				transition: all .3s ease-in-out;
+			}
+
+			a#instagram {
+				display: inline-block;
+				margin-top: 40px;
+				width: 180px;
+				height: 180px;
+				border-radius: 35px;
+				font-size: 130px;
+				color: #fff;
+				background-image: linear-gradient(to right top, #ffdc80, #ffb36f, #ff877a, #ff6099, #d84fbf, #b94fca, #9152d4, #5b55da, #694ed1, #7348c7, #7c41be, #833ab4);
+			}
+
+			a#instagram:hover {
+				background-image: linear-gradient(to right top, #833ab4, #7c41be, #7348c7, #694ed1, #5b55da, #9152d4, #b94fca, #d84fbf, #ff6099, #ff877a, #ffb36f, #ffdc80);
+			}
+
+			a#foreflight {
+				display: inline-block;
+				margin-top: 35px;
+				width: 170px;
+				border: 1px solid transparent;
+			}
+
+			a#foreflight img {
+				width: 150px;
+				transition: all .2s ease-in-out;
+			}
+
+			a#foreflight:hover .plane {
+				transform: rotate3d(1, 1, 1, 45deg);
+				transition: all .2s ease-in-out;
+			}
+
+			a#facebook {
+				display: inline-block;
+				margin-top: 70px;
+				width: 130px;
+				height: 130px;
+				border-radius: 10px;
+				font-size: 94px;
+				color: #4267B2;
+				transition: all .2s ease-in-out;
+			}
+
+			a#facebook:hover {
+				background-color: #4267B2;
+				color: #fff;
+				transition: all .2s ease-in-out;
+			}
+
+			a#npr {
+				display: inline-block;
+				margin-top: 90px;
+				font-size: 60px;
+				text-decoration: none;
+				letter-spacing: 0;
+				font-family: 'Trebuchet MS';
+				font-weight: 600;
+				color: #fff;
+				transition: all .2s ease-in-out;
+			}
+
+			a#npr .letter {
+				float: left;
+				width: 80px;
+				height: 80px;
+			}
+
+			a#npr .n {
+				background-color: #d62021;
+				transition: all .2s ease-in-out;
+			}
+
+			a#npr .p {
+				background-color: #00000F;
+				transition: all .2s ease-in-out;
+			}
+
+			a#npr .r {
+				background-color: #237bbd;
+				transition: all .2s ease-in-out;
+			}
+
+			a#npr:hover .n {
+				background-color: #fff;
+				color: #d62021;
+				transition: all .2s ease-in-out;
+			}
+
+			a#npr:hover .p {
+				background-color: #fff;
+				color: #00000F;
+				transition: all .2s ease-in-out;
+			}
+
+			a#npr:hover .r {
+				background-color: #fff;
+				color: #237bbd;
+				transition: all .2s ease-in-out;
+			}
+
+		</style>
+	</head>
+	<body>
+		
+		<div id="main_content">
+
+			<h1>Button Styling &mdash; James Fawcett</h1>
+			
+			<div class="button_container">
+				<a href="https://www.coca-cola.com/" target="_blank" id="coke"><img src="img/cola.png"></a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.cartoonnetwork.com/" target="_blank" id="cn"><img src="img/cn.png"></a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.explodingkittens.com/" target="_blank" id="kittens"><i class="fa fa-bomb bomb" aria-hidden="true"></i><br />exploding<br />kittens</a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.nike.com/" target="_blank" id="nike"><img src="img/nike.png"></a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.instagram.com/" target="_blank" id="instagram"><i class="fab fa-instagram"></i></a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.foreflight.com/" target="_blank" id="foreflight">
+					<img class="plane" src="img/foreflight.png">
+					<img src="img/foreflight-text.png">
+				</a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.facebook.com/" target="_blank" id="facebook">
+					<i class="fab fa-facebook-square"></i>
+				</a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.npr.org/" target="_blank" id="npr">
+					<span class="letter n">n</span>
+					<span class="letter p">p</span>
+					<span class="letter r">r</span>
+				</a>
+			</div>
+
+		</div>	
+
+	</body>
+</html>
