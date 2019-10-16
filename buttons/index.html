@@ -6,6 +6,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700&display=swap" rel="stylesheet">
 
 		<script src="https://kit.fontawesome.com/9736656b24.js" crossorigin="anonymous"></script>
 		
@@ -238,6 +239,236 @@
 				transition: all .2s ease-in-out;
 			}
 
+			a#ideo {
+				display: inline-block;
+				margin-top: 60px;
+				text-decoration: none;
+				transition: all .2s ease-in-out;
+			}
+
+			a#ideo .arch {
+				opacity: 0.9;
+			}
+
+			.arches {
+				margin-left: -30px;
+			}
+
+			a#ideo .teal {
+				position: relative;
+			}
+
+			a#ideo .orange {
+				position: absolute;
+				margin-left: -60px;
+				transition: all .2s ease-in-out;
+			}
+
+			a#ideo .text {
+				width: 150px;
+			}
+
+			a#ideo:hover .orange {
+				margin-left: -100px;
+				transition: all .2s ease-in-out;
+			}
+
+			a#ibm {
+				display: inline-block;
+				margin-top: 85px;
+				margin-left: -170px;
+				transition: all .2s ease-in-out;
+			}
+
+			a#ibm img {
+				position: absolute;
+				margin-top: 10px;
+				margin-left: 10px;
+				width: 150px;
+			}
+
+			a#ibm .pink {
+				position: absolute;
+				height: 0;
+				width: 170px;
+				background-color: rgb(253, 150, 190);
+				transition: all .2s ease-in-out;
+			}
+
+			a#ibm:hover .pink {
+				height: 85px;
+				transition: all .2s ease-in-out;
+			}
+
+			a#lyft {
+				display: inline-block;
+				margin-top: 90px;
+				width: 200px;
+				height: 70px;
+				border-radius: 60px;
+				line-height: 0em;
+				font-size: 70px;
+				color: #FF00BF;
+			}
+
+			a#lyft:hover {
+				background-color: #FF00BF;
+				color: #fff;
+			}
+
+			@font-face {
+				font-family: 'Samsung Sans Bold';
+				font-style: normal;
+				font-weight: bold;
+				src: url('fonts/SamsungSans-Bold.woff') format('woff');
+			}
+
+			a#samsung {
+				display: inline-block;
+				margin-top: 90px;
+				font-weight: bold;
+				text-transform: uppercase;
+				text-decoration: none;
+				font-family: 'Samsung Sans Bold';
+				font-size: 40px;
+				color: #0c4da2;
+				transition: all .2s ease-in-out;
+			}
+
+			a#samsung p {
+				margin: 10px;
+			}
+
+			a#samsung .blue {
+				z-index: -1;
+				position: absolute;
+				height: 65px;
+				width: 0;
+				background-color: #0c4da2;
+				transition: all .2s ease-in-out;
+			}
+
+			a#samsung:hover {
+				color: #fff;
+				transition: all .2s ease-in-out;
+			}
+
+			a#samsung:hover .blue {
+				width: 215px;
+				transition: all .2s ease-in-out;
+			}
+
+			a#allonline {
+				display: inline-block;
+				margin-top: 100px;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-family: 'Source Sans Pro', sans-serif;
+				font-size: 30px;
+				color: #243143;
+			}
+
+			a#allonline .text {
+				display: inline;
+			}
+
+			a#allonline .top {
+				padding: 3px;
+				background-color: #243143;
+				color: #fff;
+			}
+
+			a#allonline .bottom:after {
+				content: "";
+				position: absolute;
+				margin-left: -166px;
+				margin-top: 30px;
+				width: 0;
+				height: 5px;
+				background-color: #243143;
+				transition: all .3s ease-in-out;
+			}
+
+			a#allonline:hover .bottom:after {
+				width: 164px;
+				transition: all .3s ease-in-out;
+			}
+
+			@font-face {
+				font-family: 'Harry P';
+				font-style: normal;
+				font-weight: bold;
+				src: url('fonts/HARRYP.TTF') format('truetype');
+			}
+
+			a#wizarding {
+				display: inline-block;
+				margin-top: 85px;
+				text-decoration: none;
+				font-size: 50px;
+				font-weight: normal;
+				font-family: 'Harry P';
+				color: #333;
+				transition: all .3s ease-in-out;
+			}
+
+			a#wizarding:after {
+				content: "";
+				position: absolute;
+				margin-top: -85px;
+				margin-left: -120px;
+				transform: rotate(45deg);
+				width: 150px;
+				height: 150px;
+				border: 2px solid #333;
+				transition: all .3s ease-in-out;
+			}
+
+			a#wizarding:hover::after {
+				z-index: -1;
+				background-color: #333;
+				border-radius: 50%;
+				transition: all .3s ease-in-out;
+			}
+
+			a#wizarding:hover {
+				color: #fff;
+			}
+
+			a#nyker {
+				display: inline-block;
+				margin-top: 80px;
+				transition: all .3s ease-in-out;
+			}
+
+			a#nyker .icon {
+				position: absolute;
+				margin-left: 90px;
+				width: 80px;
+				height: 80px;
+				transition: all .3s ease-in-out;
+			}
+
+			a#nyker .logo {
+				position: relative;
+				margin-top: 20px;
+				opacity: 0;
+				margin-left: 100px;
+				transition: all .3s ease-in-out;
+			}
+
+			a#nyker:hover .icon {
+				margin-left: 100px;
+				opacity: 0;
+				transition: all .3s ease-in-out;
+			}
+
+			a#nyker:hover .logo {
+				margin-left: 0;
+				opacity: 1;
+				transition: all .3s ease-in-out;
+			}
+
 		</style>
 	</head>
 	<body>
@@ -284,6 +515,56 @@
 					<span class="letter n">n</span>
 					<span class="letter p">p</span>
 					<span class="letter r">r</span>
+				</a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.ideo.org/" target="_blank" id="ideo">
+					<div class="arches">
+						<img class="arch teal" src="img/ideo-teal.png">
+						<img class="arch orange" src="img/ideo-orange.png">
+					</div>
+					<img class="text" src="img/ideo.png">
+				</a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.ibm.com/" target="_blank" id="ibm">
+					<div class="pink"></div>
+					<img src="img/ibm.png">
+				</a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.lyft.com/" target="_blank" id="lyft">
+					<i class="fab fa-lyft"></i>
+				</a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.samsung.com/" target="_blank" id="samsung">
+					<div class="blue"></div>
+					<p>samsung</p>
+				</a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.allontheline.org/" target="_blank" id="allonline">
+					<div class="text top">all</div>
+					<div class="text bottom">on the line</div>
+				</a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.wizardingworld.com/" target="_blank" id="wizarding">
+					Wizarding<br />World
+				</a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.newyorker.com/" target="_blank" id="nyker">
+					<img class="icon" src="img/nyker.png">
+					<img class="logo" src="img/nyklogo.png">
 				</a>
 			</div>
 
