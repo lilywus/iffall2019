@@ -1,0 +1,114 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	background-color: #fafafa;
+	font-size: 18px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+	color: #deb204;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+hr {
+	border: none;
+	border-top: 5px solid #f6ccfe;
+	width: 80%;
+}
+
+.content {
+	max-width: 700px;
+	width: 85%;
+	margin: 10px auto;
+}
+
+.content img {
+	max-width: 400px;
+	width: 80%;
+}
+
+.bars {
+	box-sizing: border-box;
+	height: 15px;
+}
+
+.bar {
+	float: left;
+	width: 33.33%;
+	height: 15px;
+}
+
+.purple {
+	background-color: #f6ccfe;
+}
+
+.light {
+	background-color: #faffea;
+}
+
+.yellow {
+	background-color: #ffe165;
+}
+
+.head {
+	text-align: center;
+}
+
+.ch {
+	font-family: 'Noto Sans TC', sans-serif;
+}
+
+.content ul {
+	list-style-type: none;
+}
+
+.content .indent {
+	margin-left: 15px;
+}
+
+.content li {
+	margin-bottom: 10px;
+}
+
+.content ol {
+  list-style: none;
+  counter-reset: counter;
+}
+.content ol li {
+  counter-increment: counter;
+}
+
+.content ol li::before {
+  content: counter(counter) ". ";
+  color: #ba60cc;
+  font-weight: bolder;
+}
+
+.content ol b {
+	color: #edbe00;
+}
+
+.content ol.secondary li::before {
+  content: counter(counter, lower-alpha) ". ";
+}
+
+.content .step {
+	max-width: 300px;
+	display: block;
+	margin: 10px auto;
+}
+
+.last {
+	margin: 40px 0;
+	font-size: 1.1em;
+}
+
+.last img {
+	display: block;
+	margin: 0 auto;
+}
