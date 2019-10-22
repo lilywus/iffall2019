@@ -106,9 +106,5 @@ hr {
 .last {
 	margin: 40px 0;
 	font-size: 1.1em;
-}
-
-.last img {
-	display: block;
-	margin: 0 auto;
+	text-align: center;
 }
