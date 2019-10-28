@@ -1,0 +1,122 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	background-color: #fafafa;
+	font-size: 18px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+	color: #deb204;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+b {
+	color: #edbe00;
+}
+
+hr {
+	border: none;
+	border-top: 4px solid #f6ccfe;
+	width: 80%;
+	margin-top: 30px;
+}
+
+h3 {
+	text-decoration: underline;
+}
+
+.content {
+	max-width: 700px;
+	width: 85%;
+	margin: 10px auto;
+}
+
+.content img {
+	max-width: 400px;
+	width: 80%;
+}
+
+.bars {
+	box-sizing: border-box;
+	height: 15px;
+}
+
+.bar {
+	float: left;
+	width: 33.33%;
+	height: 15px;
+}
+
+.purple {
+	background-color: #f6ccfe;
+}
+
+.light {
+	background-color: #faffea;
+}
+
+.yellow {
+	background-color: #ffe165;
+}
+
+.head {
+	text-align: center;
+}
+
+.ch {
+	font-family: 'Noto Sans TC', sans-serif;
+}
+
+.small {
+	font-size: 0.9em;
+}
+
+.amount {
+	display: inline-block;
+	padding: 5px;
+	background-color: #ffe88c;
+}
+
+.content ul {
+	list-style-type: none;
+}
+
+.content li {
+	margin-bottom: 10px;
+}
+
+.content ol {
+  list-style: none;
+  counter-reset: counter;
+}
+.content ol li {
+  counter-increment: counter;
+}
+
+.content ol li::before {
+  content: counter(counter) ". ";
+  color: #ba60cc;
+  font-weight: bolder;
+}
+
+.content .step {
+	max-width: 300px;
+	display: block;
+	margin: 10px auto;
+}
+
+ol img {
+	border-radius: 50%;
+	border: 5px solid #ffe88c;
+}
+
+.last {
+	margin: 40px 0;
+	font-size: 1.1em;
+	text-align: center;
+}
