@@ -1,0 +1,54 @@
+body {
+	font-family: 'Helvectica', sans-serif;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid #000;
+}
+
+.content {
+	width: 90%;
+	margin: 40px auto;
+}
+
+.content p {
+	font-size: 1.2em;
+}
+
+.content img {
+	display: inline-block;
+}
+
+.content h2 {
+	margin-top: 50px;
+}
+
+.pictures {
+	text-align: center;
+}
+
+.desktop {
+	width: 75%;
+}
+
+.mobile {
+	width: 20%;
+}
+
+@media (max-width: 640px) {
+
+	.content img {
+		display: block;
+	}
+
+	.desktop {
+		width: 100%;
+	}
+
+	.mobile {
+		width: 50%;
+		margin: 15px auto;
+	}
+
+}
