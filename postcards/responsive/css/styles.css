@@ -30,31 +30,65 @@ p {
 
 /* Postcard 1 */
 
+#first {
+	background: #e6efff;
+}
+
 #first .postcard {
 	background: #e6efff url('../img/bg-1.png') center center no-repeat;
 	/* Image from https://www.moominmove.com/ */
-	background-size: cover;
+	background-size: 1500px;
+	background-position: -475px 10%; 
 	font-family: 'Kalam', cursive;
-	font-size: 30px;
+	font-size: 35px;
 }
 
 .quote-1 {
-	box-sizing: border-box;
 	position: absolute;
-	bottom: 0;
-	width: 100%;
-	padding: 15px 10%;
-	background: rgba(255, 255, 255, .9);
+	box-sizing: border-box;
+	top: 12%;
+	width: 50%;
+	right: 10%;
 	text-align: center;
+	padding: 10px;
+	color: #fff;
+	background: #48a750;
+	box-shadow: 10px 10px green;
 }
 
 .quote-1 .p-cite {
 	font-size: .8em;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 1050px) {
 	#first .postcard {
+		background-size: 1000px;
+		background-position: -200px 200px; 
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 850px) {
+	#first .postcard {
+		background-size: 700px;
+		background-position: -150px 120%; 
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 600px) {
+	.quote-1 {
 		font-size: 25px;
+		right: 50%;
+		margin-right: -40%;
+		width: 80%;
+	}
+}
+
+@media (max-width: 400px) {
+	.quote-1 {
+		font-size: 20px;
+		top: 10%;
 	}
 }
 
@@ -155,7 +189,7 @@ p {
 
 @media (max-width: 760px) {
 	#third .postcard {
-		background-size: 50%;
+		background-size: 300px;
 		background-position: center 10%;
 	}
 
@@ -167,13 +201,13 @@ p {
 }
 
 @media (max-width: 475px) {
-	#third .postcard {
+	.quote-3 {
 		font-size: 25px;
 	}
 }
 
-@media (max-width: 350px) {
-	#third .postcard {
+@media (max-width: 400px) {
+	.quote-3 {
 		font-size: 20px;
 	}
 }
