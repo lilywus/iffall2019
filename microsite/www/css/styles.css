@@ -164,7 +164,7 @@ button {
 
 .content {
 	width: 80%;
-	margin: -30px auto 10px auto;
+	margin: -80px auto 10px auto;
 }
 
 .content h1 {
@@ -175,11 +175,60 @@ button {
 	text-align: center;
 }
 
+.content img {
+	width: 300px;
+	float: right;
+	margin: 0 0 20px 20px;
+}
+
+.writing p {
+	margin-top: 0;
+}
+
 .writing {
 	width: 80%;
 	margin: 10px auto;
-	padding: 15px 35px;
+	padding: 35px;
 	font-size: 1.1em;
-	background: #851017;
+	background: #610d12;
 	color: #f2f2f2;
+}
+
+.books {
+	width: 100%;
+	padding: 0 12%;
+}
+
+.book {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 30%;
+	height: 0;
+	margin: 1% 4%;
+	border: 2px solid #610d12;
+	background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 47.35%;
+}
+
+.book-desc {
+	opacity: 0;
+	box-sizing: border-box;
+	position: absolute;
+	max-height: 70%;
+	overflow-y: scroll;
+	width: 21.5%;
+	padding: 0 15px;
+	margin: -37% 0 0 1%;
+	background: rgba(255, 255, 255, .95);
+	font-size: 1.1em;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.book:hover .book-desc {
+	opacity: 1;
 }
