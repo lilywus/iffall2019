@@ -9,6 +9,11 @@ body {
 	font-family: 'Mukta', sans-serif;
 }
 
+button {
+	border: none;
+	background: none;
+}
+
 .landing {
 	box-sizing: border-box;
 	width: 100%;
@@ -85,4 +90,82 @@ body {
 .landing-tag:hover {
 	background: #000;
 	box-shadow: 5px 5px #850f17;
+}
+
+.top {
+	box-sizing: border-box;
+	top: 0;
+	left: 0;
+	width: 150px;
+	padding: 10px;
+	text-align: center;
+	background: #f5eeda;
+}
+
+.top img {
+	width: 100%;
+}
+
+.top button {
+	font-size: 1.5em;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #d3ccbb;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 20px;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  background: #000;
+  color: #fff;
+}
+
+.sidenav button {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 2em;
+}
+
+#main {
+  transition: margin-left .5s;
+}
+
+.content {
+	width: 80%;
+	margin: 10px auto;
+}
+
+.content h1 {
+	margin: 0;
+	font-family: 'Cutive Mono', monospace;
+	font-size: 3em;
+	color: #52080d;
+	text-align: center;
+}
+
+.writing {
+	width: 80%;
+	margin: 10px auto;
+	padding: 15px 35px;
+	font-size: 1.1em;
+	background: #851017;
+	color: #f2f2f2;
 }
