@@ -4,6 +4,12 @@ body, html {
 	height: 100%;
 }
 
+@media (max-width: 1200px) {
+	.content {
+		margin-top: 10px !important;
+	}
+}
+
 body {
 	background: #eee;
 	font-family: 'Mukta', sans-serif;
@@ -126,7 +132,8 @@ button {
 
 .sidenav {
   height: 100%;
-  width: 0;
+  display: none;
+  width: 300px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -159,7 +166,7 @@ button {
 }
 
 #main {
-  transition: margin-left .5s;
+  /*transition: margin-left .5s;*/
 }
 
 .content {
