@@ -1,0 +1,234 @@
+body, html {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+body {
+	background: #eee;
+	font-family: 'Mukta', sans-serif;
+}
+
+button {
+	border: none;
+	background: none;
+}
+
+.landing {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.landing-menu {
+	box-sizing: border-box;
+	float: left;
+	width: 40%;
+	height: 100%;
+	padding: 20px 30px;
+	background: #c7c7c7;
+}
+
+.landing-menu h1 {
+	font-family: 'Cutive Mono', monospace;
+	font-size: 3em;
+	color: #850f17;
+	margin: 0;
+}
+
+.landing-menu img {
+	width: 100%;
+}
+
+.landing-menu a {
+	text-decoration: none;
+	color: #000;
+}
+
+.landing-menu ul {
+	list-style-type: none;
+	padding: 0;
+	font-size: 1.7em;
+}
+
+.landing-menu li {
+	padding-left: 10px;
+}
+
+.landing-menu li:hover {
+	background: #000;
+	color: #fff;
+}
+
+.landing-side {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 60%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+}
+
+.landing-side img {
+	width: 100%;
+}
+
+.landing-tag {
+	z-index: 99;
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+	padding: 5px;
+	font-family: 'Cutive Mono', monospace;
+	font-size: 2em;
+	background: #850f17;
+	color: #fff;
+	box-shadow: 5px 5px #000;
+}
+
+.landing-tag:hover {
+	background: #000;
+	box-shadow: 5px 5px #850f17;
+}
+
+.top {
+	box-sizing: border-box;
+	top: 0;
+	left: 0;
+	width: 150px;
+	padding: 10px;
+	text-align: center;
+	background: #f5eeda;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.top:hover {
+	background: #d3ccbb;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.top img {
+	width: 100%;
+}
+
+.top button {
+	font-size: 1.5em;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #d3ccbb;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 20px;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  background: #000;
+  color: #fff;
+}
+
+.sidenav button {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 2em;
+}
+
+#main {
+  transition: margin-left .5s;
+}
+
+.content {
+	width: 80%;
+	margin: -80px auto 10px auto;
+}
+
+.content h1 {
+	margin: 0;
+	font-family: 'Cutive Mono', monospace;
+	font-size: 3em;
+	color: #52080d;
+	text-align: center;
+}
+
+.content img {
+	width: 300px;
+	float: right;
+	margin: 0 0 20px 20px;
+}
+
+.writing p {
+	margin-top: 0;
+}
+
+.writing {
+	width: 80%;
+	margin: 10px auto;
+	padding: 35px;
+	font-size: 1.1em;
+	background: #610d12;
+	color: #f2f2f2;
+}
+
+.books {
+	width: 100%;
+	padding: 0 12%;
+}
+
+.book {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 30%;
+	height: 0;
+	margin: 1% 4%;
+	border: 2px solid #610d12;
+	background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 47.35%;
+}
+
+.book-desc {
+	opacity: 0;
+	box-sizing: border-box;
+	position: absolute;
+	max-height: 70%;
+	overflow-y: scroll;
+	width: 21.5%;
+	padding: 0 15px;
+	margin: -37% 0 0 1%;
+	background: rgba(255, 255, 255, .95);
+	font-size: 1.1em;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.book:hover .book-desc {
+	opacity: 1;
+}
