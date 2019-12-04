@@ -182,10 +182,24 @@ button {
 	text-align: center;
 }
 
+.content figure {
+	display: inline-block;
+	float: right;
+}
+
 .content img {
 	width: 300px;
-	float: right;
-	margin: 0 0 20px 20px;
+	vertical-align: top;
+}
+
+@media (max-width: 900px) {
+	.content img {
+		width: 200px !important;
+	}
+}
+
+.content figcaption {
+	text-align: center;
 }
 
 .writing p {
