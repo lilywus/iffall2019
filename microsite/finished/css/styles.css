@@ -20,10 +20,6 @@ button {
 	background: none;
 }
 
-i {
-	color: #850f17;
-}
-
 .landing {
 	box-sizing: border-box;
 	width: 100%;
@@ -235,6 +231,10 @@ i {
 	background-size: contain;
     background-repeat: no-repeat;
     padding-top: 63.5%;
+}
+
+.book i {
+	color: #850f17;
 }
 
 @media (max-width: 800px) {
