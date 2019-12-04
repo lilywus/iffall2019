@@ -232,14 +232,30 @@ button {
     padding-top: 63.5%;
 }
 
+@media (max-width: 800px) {
+	.books {
+		padding: 0 15% !important;
+	}
+
+	.book {
+		width: 70% !important;
+		padding-top: 111.2% !important;
+	}
+
+	.book-desc {
+		margin: -86% 0 0 3% !important;
+		width: 49% !important;
+	}
+}
+
 .book-desc {
 	opacity: 0;
 	box-sizing: border-box;
 	position: absolute;
 	max-height: 70%;
 	width: 27%;
-	padding: 10px 30px;
-	margin: -47% 0 0 2%;
+	padding: 5px 30px;
+	margin: -49% 0 0 2%;
 	background: rgba(255, 255, 255, .95);
 	font-size: 1.1em;
 	-webkit-transition: all .2s ease-in-out;
